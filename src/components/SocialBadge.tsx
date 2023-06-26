@@ -23,7 +23,7 @@ const SocialBadge = (props: propsType) => {
             target="_blank"
         >
             <Image src={props.asset} className="w-5 h-5 fill-current" loading="lazy" alt={props.social} />
-            <span className="ml-2">{props.description}</span>
+            <span className="ml-2 hidden lg:block">{props.description}</span>
         </a>
     );
 };
