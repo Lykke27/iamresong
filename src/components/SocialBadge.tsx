@@ -9,9 +9,10 @@ interface propsType {
 }
 
 const SocialBadge = (props: propsType) => {
+    const colorStyle = socialToColor(props.social);
     return (
         <a
-            className={`bg-${props.social} last:mr-0 px-4 py-2 font-semibold text-white inline-flex items-center rounded cursor-pointer`}
+            className={`last:mr-0 px-4 py-2 font-semibold text-white inline-flex items-center rounded bg-${props.social} cursor-pointer`}
             href={props.link}
             target="_blank"
         >
