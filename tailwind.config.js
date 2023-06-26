@@ -12,6 +12,12 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        telegram: '#2aabee',
+        linkedin: '#0077B7',
+        github: '#171515',
+        tableau: '#d2a9c2',
+      },
     },
   },
   plugins: [],
