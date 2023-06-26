@@ -9,10 +9,17 @@ interface propsType {
 }
 
 const SocialBadge = (props: propsType) => {
-    const colorStyle = socialToColor(props.social);
+    const colorStyle = {
+        telegram: 'bg-telegram',
+        linkedin: 'bg-linkedin',
+        github: 'bg-github',
+        tableau: 'bg-tableau',
+    };
     return (
         <a
-            className={`last:mr-0 px-4 py-2 font-semibold text-white inline-flex items-center rounded bg-${props.social} cursor-pointer`}
+            className={`last:mr-0 px-4 py-2 font-semibold text-white inline-flex items-center rounded ${
+                colorStyle[props.social]
+            } cursor-pointer`}
             href={props.link}
             target="_blank"
         >
