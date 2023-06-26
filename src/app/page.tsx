@@ -8,14 +8,14 @@ import SocialBadge from '@/components/SocialBadge';
 
 export default function Home() {
     return (
-        <main className="container max-w-screen-lg mx-auto flex min-h-screen flex-col items-center p-5 sm:p-15 font-sans">
+        <main className="container max-w-screen-lg mx-auto flex flex-col items-center p-5 sm:p-15 font-sans">
             <div className="flex flex-col sm:flex-row max-w-xs sm:max-w-none shadow-md rounded-lg ">
                 <Image
                     src={resongPic}
-                    className="rounded-t-lg sm:rounded-s-lg sm:rounded-e-none flex-none sm:w-48 relative aspect-square md:mb-0"
+                    className="rounded-t-lg sm:rounded-s-lg sm:rounded-e-none flex-none sm:w-52 sm:h-52 relative aspect-square md:mb-0"
                     alt="Picture of the author"
                 />
-                <div className="flex-auto p-4 border rounded-b-lg rounded-t-none">
+                <div className="flex-auto p-4 border rounded-b-lg rounded-t-none sm:h-52 sm:rounded-e-lg">
                     <div className="flex-column w-full">
                         <h1 className="text-lg font-semibold text-slate-900">Hello, I am Kseniia</h1>
                         <div className="text-sm font-medium text-slate-500 mt-2">Data Analyst SQL/Python</div>
