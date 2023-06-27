@@ -13,10 +13,10 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-          tableau: '#d2a9c2',
-          telegram: '#2aabee',
-          linkedin: '#0077B7',
-          github: '#171515',
+          tableau: {default: '#d2a9c2', hover: '#c99bb8'},
+          telegram: {default: '#2aabee', hover: '#229fe0'},
+          linkedin: {default: '#0077B7', hover: '#006da8'},
+          github: {default:'#171515', hover: '#211e1e'}
       },
     },
   },

@@ -9,16 +9,16 @@ interface propsType {
 
 const SocialBadge = (props: propsType) => {
     const colorStyle = {
-        telegram: 'bg-telegram',
-        linkedin: 'bg-linkedin',
-        github: 'bg-github',
-        tableau: 'bg-tableau',
+        telegram: 'bg-telegram-default hover:bg-telegram-hover',
+        linkedin: 'bg-linkedin-default hover:bg-linkedin-hover',
+        github: 'bg-github-default hover:bg-github-hover',
+        tableau: 'bg-tableau-default hover:bg-tableau-hover',
     };
     return (
         <a
-            className={`last:mr-0 px-4 py-2 font-semibold text-white inline-flex items-center rounded ${
+            className={`px-4 py-2 last:mr-0 font-semibold text-white inline-flex items-center rounded ${
                 colorStyle[props.social]
-            } cursor-pointer`}
+            } cursor-pointer transition ease-in-out duration-300`}
             href={props.link}
             target="_blank"
         >
