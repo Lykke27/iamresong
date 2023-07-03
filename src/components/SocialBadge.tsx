@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface propsType {
-    asset: string;
+    asset: StaticImageData;
     description: string;
     social: 'telegram' | 'tableau' | 'github' | 'linkedin';
     link: string;
