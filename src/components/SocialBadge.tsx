@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 interface propsType {
-    asset: any;
+    asset: string;
     description: string;
     social: 'telegram' | 'tableau' | 'github' | 'linkedin';
     link: string;
@@ -16,7 +16,7 @@ const SocialBadge = (props: propsType) => {
     };
     return (
         <a
-            className={`px-4 py-2 last:mr-0 font-semibold text-white inline-flex items-center rounded ${
+            className={`px-4 py-2 last:mr-0 font-semibold text-white shadow-sm inline-flex items-center rounded ${
                 colorStyle[props.social]
             } cursor-pointer transition ease-in-out duration-300`}
             href={props.link}

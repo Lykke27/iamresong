@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// assets
 import resongPic from '../../public/assets/resong.jpeg';
 import TelegramLogo from '../../public/assets/icons/tg-icon.png';
 import LinkedInLogo from '../../public/assets/icons/ln-icon.png';
@@ -6,7 +6,11 @@ import GitHubLogo from '../../public/assets/icons/github-icon.png';
 import TableauLogo from '../../public/assets/icons/tb-icon.png';
 import TelIcon from '../../public/assets/icons/tel-icon.png';
 import MailIcon from '../../public/assets/icons/mail-icon.png';
+
+// components
+import Image from 'next/image';
 import SocialBadge from '@/components/SocialBadge';
+import LinkButton from '@/components/LinkButton';
 
 export default function Home() {
     return (
@@ -78,14 +82,11 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <a
-                rel="noreferrer noopener"
-                href="/pdf/Kseniia_Zaitseva_CV.pdf"
-                target="_blank"
-                className="px-6 py-2 mt-4 last:mr-0 font-semibold text-white inline-flex items-center rounded cursor-pointer transition ease-in-out duration-300 bg-cyan-500 hover:bg-cyan-600 shadow-md"
-            >
-                Open my CV
-            </a>
+            <LinkButton link="/pdf/Kseniia_Zaitseva_CV.pdf" description="My CV" />
+            <LinkButton
+                link="https://drive.google.com/drive/folders/1v-V2qKrLCoMWpHMLLZ3l9AUHiwmd8_5j"
+                description="My certificates"
+            />
         </main>
     );
 }
