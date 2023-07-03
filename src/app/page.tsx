@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import resongPic from '../../public/assets/resong.jpeg';
-import TelegramLogo from '../../public/assets/tg-icon.png';
-import LinkedInLogo from '../../public/assets/ln-icon.png';
-import GitHubLogo from '../../public/assets/github-icon.png';
-import TableauLogo from '../../public/assets/tb-icon.png';
-import TelIcon from '../../public/assets/tel-icon.png';
-import MailIcon from '../../public/assets/mail-icon.png';
+import TelegramLogo from '../../public/assets/icons/tg-icon.png';
+import LinkedInLogo from '../../public/assets/icons/ln-icon.png';
+import GitHubLogo from '../../public/assets/icons/github-icon.png';
+import TableauLogo from '../../public/assets/icons/tb-icon.png';
+import TelIcon from '../../public/assets/icons/tel-icon.png';
+import MailIcon from '../../public/assets/icons/mail-icon.png';
 import SocialBadge from '@/components/SocialBadge';
 
 export default function Home() {
     return (
         <main className="container max-w-screen-lg mx-auto flex flex-col items-center p-5 sm:p-15 sm:mt-10 font-sans">
-            <div className="flex flex-col sm:flex-row max-w-xs sm:max-w-none shadow-md  rounded-lg ">
+            <div className="flex flex-col sm:flex-row max-w-xs sm:max-w-none shadow-md rounded-lg">
                 <Image
                     src={resongPic}
                     className="rounded-t-lg sm:rounded-s-lg sm:rounded-e-none flex-none sm:w-64 sm:h-64 relative aspect-square md:mb-0"
@@ -78,6 +78,14 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <a
+                rel="noreferrer noopener"
+                href="/pdf/Kseniia_Zaitseva_CV.pdf"
+                target="_blank"
+                className="px-6 py-2 mt-4 last:mr-0 font-semibold text-white inline-flex items-center rounded cursor-pointer transition ease-in-out duration-300 bg-cyan-500 hover:bg-cyan-600 shadow-md"
+            >
+                Open my CV
+            </a>
         </main>
     );
 }
