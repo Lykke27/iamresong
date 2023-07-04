@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
     title: 'Kseniia Zaitseva',
-    description: 'Kseniia Zaitseva Portfolio',
+    description: 'Personal portfolio',
     referrer: 'origin-when-cross-origin',
     keywords: ['Portfolio', 'Kseniia', 'Kseniia Zaitseva', 'Data Analyst', 'SQL', 'Python', 'Resume'],
     creator: 'Lykke',
