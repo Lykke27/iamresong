@@ -33,7 +33,7 @@ export default function Home() {
                         <div className="text-md font-medium text-slate-900">My Contacts</div>
                         <div className="flex-column">
                             <div className="flex flex-row items-center mt-1">
-                                <Image src={TelIcon} className="w-5 h-5 fill-current mr-1" alt="Phone icon" />
+                                {/* <Image src={TelIcon} className="w-5 h-5 fill-current mr-1" alt="Phone icon" /> */}
                                 <a
                                     href="tel:+381629378979"
                                     className="text-sm font-medium text-slate-500 hover:text-slate-600 transition ease-in-out duration-300"
@@ -42,7 +42,7 @@ export default function Home() {
                                 </a>
                             </div>
                             <div className="flex flex-row items-center mt-1">
-                                <Image src={MailIcon} className="w-5 h-5 fill-current mr-1" alt="Email" />
+                                {/* <Image src={MailIcon} className="w-5 h-5 fill-current mr-1" alt="Email" /> */}
                                 <a
                                     href="mailto:resong@icloud.com"
                                     className="text-sm font-medium text-slate-500 hover:text-slate-600 transition ease-in-out duration-300"
