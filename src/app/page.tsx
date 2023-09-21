@@ -4,8 +4,6 @@ import TelegramLogo from '../../public/assets/icons/tg-icon.png';
 import LinkedInLogo from '../../public/assets/icons/ln-icon.png';
 import GitHubLogo from '../../public/assets/icons/github-icon.png';
 import TableauLogo from '../../public/assets/icons/tb-icon.png';
-import TelIcon from '../../public/assets/icons/tel-icon.png';
-import MailIcon from '../../public/assets/icons/mail-icon.png';
 
 // components
 import Image from 'next/image';
@@ -18,22 +16,25 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row max-w-xs sm:max-w-none shadow-md rounded-lg">
                 <Image
                     src={resongPic}
-                    className="rounded-t-lg sm:rounded-s-lg sm:rounded-e-none flex-none sm:w-64 sm:h-64 relative aspect-square md:mb-0"
+                    className="rounded-t-lg sm:rounded-s-lg sm:rounded-e-none flex-none sm:w-80 relative aspect-square md:mb-0 object-cover"
                     alt="Picture of the author"
                 />
-                <div className="flex flex-col justify-between p-4 border rounded-b-lg rounded-t-none sm:rounded-s-none sm:h-64 sm:rounded-e-lg bg-slate-50">
+                <div className="flex flex-col justify-between p-4 border rounded-b-lg rounded-t-none sm:rounded-s-none sm:rounded-e-lg bg-slate-50">
                     <div className="flex-column w-full">
                         <h1 className="text-lg font-semibold text-slate-900">Hello, I am Kseniia</h1>
                         <div className="text-sm font-medium text-slate-500 mt-1">Data Analyst SQL/Python</div>
                         <div className="text-sm italic font-medium text-slate-500 mt-1">
-                            I love my cat called Korzhik and to work hard
+                            Data Analyst with 1,5 year of experience in analyzing large data sets and data visualization
+                            in retail and wholesale to have business insights and making reports. I have experience in
+                            marketing analytics, using tools such as SQL, Python, Excel and Tableau. Expertise in
+                            analyzing customer behavior, sales trends, market dynamics, and supply chain performance. I
+                            know how to transform numbers into valuable insights.
                         </div>
                     </div>
                     <div className="flex-column w-full mt-3">
                         <div className="text-md font-medium text-slate-900">My Contacts</div>
                         <div className="flex-column">
                             <div className="flex flex-row items-center mt-1">
-                                {/* <Image src={TelIcon} className="w-5 h-5 fill-current mr-1" alt="Phone icon" /> */}
                                 <a
                                     href="tel:+381629378979"
                                     className="text-sm font-medium text-slate-500 hover:text-slate-600 transition ease-in-out duration-300"
@@ -42,7 +43,6 @@ export default function Home() {
                                 </a>
                             </div>
                             <div className="flex flex-row items-center mt-1">
-                                {/* <Image src={MailIcon} className="w-5 h-5 fill-current mr-1" alt="Email" /> */}
                                 <a
                                     href="mailto:resong@icloud.com"
                                     className="text-sm font-medium text-slate-500 hover:text-slate-600 transition ease-in-out duration-300"
