@@ -36,10 +36,10 @@ export default function Home() {
                         <div className="flex-column">
                             <div className="flex flex-row items-center mt-1">
                                 <a
-                                    href="tel:+381629378979"
+                                    href="tel:+381629378980"
                                     className="text-sm font-medium text-slate-500 hover:text-slate-600 transition ease-in-out duration-300"
                                 >
-                                    +381629378979
+                                    +381629378980
                                 </a>
                             </div>
                             <div className="flex flex-row items-center mt-1">
